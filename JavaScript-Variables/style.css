@@ -1,0 +1,92 @@
+html,body
+{
+	border:0;
+	margin: 0;
+	padding: 0;
+	color:white;
+	font-family:  Georgia, Serif;
+	height: 100%;
+	position: relative;
+}
+
+#overlay
+{
+	background-color: rgba(7, 7, 7, 0.4);
+	position: relative;
+	height: 100%
+}
+
+.hide
+{
+	display: none;
+}
+
+.show
+{
+	display:block;
+}
+
+#map { 
+	height: 100%; 
+	position: relative;
+	width:200px;
+}
+
+#wcBanner
+{
+	
+	width:60%;
+	height:60%;
+	margin:100px auto;
+	background-color: rgba(9, 66, 27, 0.5);
+	border-radius: 10px;
+	position: relative;
+	display: block;
+
+}
+.wcBanner-content
+{
+		width: 80%;
+		margin: 70px  auto;
+		height:80%;
+
+}
+
+.wcBanner-body
+{
+	height: 80%;
+	position: relative;
+	text-align: center;
+	padding: 10px 0 10px 0;
+
+}
+.wcBanner-footer
+{
+	
+	text-align: center;
+}
+/*Main page*/
+
+.mainPage
+{
+	color:blue;
+	height:100%;
+	width: 100%;
+	
+}
+.weatherWidget
+{
+	display: block;
+	position: absolute;
+	height: 100px;
+	width:100px;
+}
+.weatherWidget i{
+
+	font-size: 80px;
+}
+.survey
+{
+	position: relative;
+	height: 100%;
+}

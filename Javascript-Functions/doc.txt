@@ -1,0 +1,105 @@
+=================>Javascript====>
+
+1.) ======================Variables        ===>  
+	Introduction to the topic 
+		==>Variables are the containers that hold values , which later can be recalled to get the stored values. varibales are decalred using var keyword and than initialized with a value simultaneously or later. Javascript variables  are untyped and can hold values of any data type suported by javascript namely   3 primitive data types , numbers , strings , boolean along with two trivial data types null and undefined. It also supports composite data type known as object.
+
+	Programming Question    
+		==> Weather widget where we convert the metrics of current temperature from celsius to fharenheit or vice versa.
+
+	Code 
+		==>
+
+	Output of Execution (Screenshot)
+		==>
+
+2.) =============== Objects =======>
+	Introduction to the topic
+		==> Objects are composite data type that contains many values.It consist of name value pairs i.e called properties or methods.
+
+	Programming Question 
+		==> A task countdown ,built using  object literal module pattrern .User can create his own countdown by giving a task title , task deadline day and time.
+	Code
+		==>
+
+	Output of Execution 
+		==>
+
+3.)	============== Function =====>
+	Introduction to the topic
+		==> JS functions are series of statement that are put together to perform a task . There are inbuilt functions provided by the JS and kept in its package or can be user defined functions. Functions is defined with function keyword ,It have to be declared and Function name can be optional , we can pass any number of parameters we want , it can return a value .
+		Self Invoking functions  or anonymous closure functions are functions with no name , which invokes itself . It helps in preventing variables to have global scope.
+
+	Programming Question
+		==> Javascript functions module , which imitate the Jquey chaining process and style a text's color , size and font family.
+
+	Code
+		==>
+
+4.) ============= Events =====>
+		Introduction to the topic
+			===> Events are things that happens to a HTML page and JS can be used to react for those things . There are numerous HTML events that can be used by JS to add more functionaity to a user view.
+
+		Programming Questions 
+		  ===> 	Creating an image grid which can react differentely on different event actions , like on rightclick , mouseover , mouseout,mousemove and click . Also change, blur Html events are captured on the  various input type in html form. 
+
+5.) ============= Arrays =====>
+		Introduction to the topic
+			===> JS arrays are variables that hold more than one values.
+		Programming Question
+			===> Github search project , where 2d arrays are used to store the json objects  to provide a sorting functionality based on name, followers and location of a github user. Different methods of array like sort and splice are shown in action. 
+
+6.) ============= Inheritance ====>
+	Introduction to the topic
+		==> Inheritance in Js is not classical inheritance , but it is prototypal inheritance where we use prototype to inherit the functionalities.
+
+	Programming Question
+		==> An inheritance example that inherits car properties in its function.
+
+7.)============= Conditions =====>
+	Introduction to the topic
+		==> Js conditional statements are used to perform different actions on different conditions
+		
+		Programming Question
+		==> A web tempalte that shows various front end functionalities like Modal , Dropdown , Collapsible , Navigation tabs .
+
+8.)============= JSON =======>
+	Introduction to the topic
+		==> JavaScript Object Notation or widely known as JSON is an alternative to XML  and a light weight data-interchange format.	
+
+	Programming Question
+		==> A github search project which sends a  query to github api for  a particular user and return a JSON objects with all the user details. Project also add the user dynamically on the html page , with added functinalities of  delete also sorting view on the basis of followers , name and location.
+
+9.)============ Regular Expression =====>
+	Introduction to the topic
+		==> Regular Expression help us in search pattern in HTML forms and can help in validation and processing . It helps in compatible with older browser. Its more user fiendly as it provide feedback while forms are still filled rather than knowing when form is submitted.
+
+	Programming question
+		==> A sign up form which validates user Email id , password and telephone number ins special format .
+
+10.)========== Type Conversion ========>
+	Introduction to the Topic
+		==>
+
+11.)========== Use Strict ==========>
+	Introduction to the topic
+		==>Its a literal expression which tells the javascript that code should follow a strict mode. It throws an error when a variable left undecalred , or  function with multiple parameters with same name.
+
+	Programming question.
+		===> A program that shows where strict mode can be used to throw error and follow good programming standard.
+
+12.)========= Js Error ============>
+	Introduction to the topic
+		==> Among three different types of errors( Syntax , Runtime ,logical) logical errors are hard to identify. Js implents try catch and finally as well throw operator to handle exceptions 	we can catch programmer generated error and runtime exceptions , but we cannot catch syntax errors.
+		JS have seven inbuilt error objects namely Error , RangeError , ReferenceError , SyntaxError , TypeError, URIError , EvalError.
+
+	Programming Question 
+		==> 
+
+
+
+
+
+
+	
+

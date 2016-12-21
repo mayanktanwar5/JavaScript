@@ -1,0 +1,51 @@
+body ,html{
+	padding: 0;
+	border:0;
+	margin:0;
+}
+
+body{
+	background-color: #ffd11a;
+	overflow: hidden;
+}
+
+
+.overlay{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+    z-index: 999;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.preview
+{
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+	border-radius:10px;
+	margin: 0 auto ;
+	margin-top:200px;
+	display: block;
+}
+
+.bg-img{
+	max-height:100%;
+	max-width: 100%;
+	margin:0 auto;
+	display: block;
+}
+
+.spinner{
+	position: absolute;
+	z-index: 1000;
+	left:50%;
+	margin: 0 auto;
+	margin-top:300px;
+	display: block;
+	top:0;
+}
+

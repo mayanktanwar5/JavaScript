@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github User Details</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<div class="container">
+	<div class="container-section">
+		<div class="search-section ">
+			<label class="control-label" for="search"><h2>Search GitHub User</h2></label>
+			<div class="form-group form-item ">
+				<input id="search" type="text" class="form-control" placeholder="Enter Github user login"></input>
+				<button id="searchUser"class="form-control btn btn-success ">Search</button>
+				<!-- <select id="sortType" class="form-control">
+					<option>Name</option>
+					<option>Followers</option>
+					<option>Location</option>
+				</select> -->	
+				<div class="radio">
+					<label for="sortType" id ="sortType" class="control-label pull-left">Sort View</label>
+					<label class="radio-inline"><input  type="radio" value ="Name" checked="checked" name="radioGroup">Name</label>
+					<label class="radio-inline"><input  type="radio" value= "Followers" name="radioGroup">Followers</label>
+					<label class="radio-inline"><input  type="radio"  value="Location" name="radioGroup">Location</label>
+				</div>
+			</div>
+		</div>
+      	</div>
+	<div id="user-container" >
+			
+	</div>
+</div>
+
+
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script id="userCardTpl" type="text/template">
+	
+		
+	
+</script>
+</body>
+</html>	

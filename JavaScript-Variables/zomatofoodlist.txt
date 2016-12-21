@@ -1,0 +1,403 @@
+{
+  "location": {
+    "entity_type": "",
+    "entity_id": 0,
+    "title": "Downtown",
+    "latitude": "37.3348076739",
+    "longitude": "-121.8885356164",
+    "city_id": 10883,
+    "city_name": "San Jose",
+    "country_id": 216,
+    "country_name": "United States"
+  },
+  "popularity": {
+    "popularity": "4.30",
+    "nightlife_index": "4.04",
+    "nearby_res": [
+      "16846048",
+      "16848085",
+      "16844824",
+      "16844449",
+      "16847590",
+      "16844086",
+      "16844814",
+      "16862853",
+      "16848007"
+    ],
+    "top_cuisines": [
+      "American",
+      "Mexican",
+      "Sandwich",
+      "Vietnamese",
+      "Cafe"
+    ],
+    "popularity_res": "100",
+    "nightlife_res": "10",
+    "subzone": "Downtown",
+    "subzone_id": 115570,
+    "city": "San Jose"
+  },
+  "link": "https://www.zomato.com/san-jose/downtown-restaurants?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+  "nearby_restaurants": [
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16846048
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16846048",
+        "name": "La Victoria Taqueria",
+        "url": "https://www.zomato.com/san-jose/la-victoria-taqueria-1-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "140 East San Carlos Street, San Jose, CA 95112",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3326500000",
+          "longitude": "-121.8844444444",
+          "zipcode": "95112",
+          "country_id": 216
+        },
+        "cuisines": "Mexican",
+        "average_cost_for_two": 20,
+        "price_range": 1,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/8/16846048/8b3b1e963b3408ca803f303192aa3ab4_featured_v2.jpg",
+        "user_rating": {
+          "aggregate_rating": "4.2",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "votes": "1051"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/la-victoria-taqueria-1-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/la-victoria-taqueria-1-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/8/16846048/8b3b1e963b3408ca803f303192aa3ab4_featured_v2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16846048",
+        "events_url": "https://www.zomato.com/san-jose/la-victoria-taqueria-1-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16848085
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16848085",
+        "name": "Original Joe's",
+        "url": "https://www.zomato.com/san-jose/original-joes-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "301 South First Street, San Jose, CA 95113",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3313250000",
+          "longitude": "-121.8872444444",
+          "zipcode": "95113",
+          "country_id": 216
+        },
+        "cuisines": "Italian",
+        "average_cost_for_two": 70,
+        "price_range": 3,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/5/16848085/93c466a0890946c17dd9f215c4a83cda_featured_v2.jpg",
+        "user_rating": {
+          "aggregate_rating": "3.9",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "445"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/original-joes-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/original-joes-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/5/16848085/93c466a0890946c17dd9f215c4a83cda_featured_v2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16848085",
+        "events_url": "https://www.zomato.com/san-jose/original-joes-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16844824
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16844824",
+        "name": "Il Fornaio",
+        "url": "https://www.zomato.com/san-jose/il-fornaio-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "302 S Market Street,  San Jose, CA 95113",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3305720000",
+          "longitude": "-121.8877380000",
+          "zipcode": "95113",
+          "country_id": 216
+        },
+        "cuisines": "Italian",
+        "average_cost_for_two": 80,
+        "price_range": 3,
+        "currency": "$",
+        "offers": [],
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "4.3",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "votes": "175"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/il-fornaio-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/il-fornaio-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16844824",
+        "events_url": "https://www.zomato.com/san-jose/il-fornaio-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16844449
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16844449",
+        "name": "Henry's Hi-Life",
+        "url": "https://www.zomato.com/san-jose/henrys-hi-life-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "301 West Street John Street, San Jose, CA 95110",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3353194444",
+          "longitude": "-121.8980166667",
+          "zipcode": "95110",
+          "country_id": 216
+        },
+        "cuisines": "American, BBQ, Steakhouse",
+        "average_cost_for_two": 0,
+        "price_range": 1,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/9/16844449/1a9f41121e8fffae8269c6b70e2c955e_featured_v2.jpg",
+        "user_rating": {
+          "aggregate_rating": "3.9",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "373"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/henrys-hi-life-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/henrys-hi-life-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/9/16844449/1a9f41121e8fffae8269c6b70e2c955e_featured_v2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16844449",
+        "events_url": "https://www.zomato.com/san-jose/henrys-hi-life-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16847590
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16847590",
+        "name": "Naglee Park Garage",
+        "url": "https://www.zomato.com/san-jose/naglee-park-garage-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "505 East San Carlos Street, San Jose, CA 95112",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3367150000",
+          "longitude": "-121.8763450000",
+          "zipcode": "95112",
+          "country_id": 216
+        },
+        "cuisines": "New American",
+        "average_cost_for_two": 43,
+        "price_range": 2,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/0/16847590/6764d8d91353890cc595b349893e8b44_featured_v2.jpg",
+        "user_rating": {
+          "aggregate_rating": "4.3",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "votes": "272"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/naglee-park-garage-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/naglee-park-garage-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/0/16847590/6764d8d91353890cc595b349893e8b44_featured_v2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16847590",
+        "events_url": "https://www.zomato.com/san-jose/naglee-park-garage-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16844086
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16844086",
+        "name": "Gordon Biersch Brewery Restaurant",
+        "url": "https://www.zomato.com/san-jose/gordon-biersch-brewery-restaurant-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "33 East San Fernando Street, San Jose, CA 95113",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3347350000",
+          "longitude": "-121.8885890000",
+          "zipcode": "95113",
+          "country_id": 216
+        },
+        "cuisines": "American, International",
+        "average_cost_for_two": 80,
+        "price_range": 3,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/6/16844086/95b59312e8f5e6a96ce0264defe5a45f_featured_v2.jpg",
+        "user_rating": {
+          "aggregate_rating": "3.7",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "131"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/gordon-biersch-brewery-restaurant-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/gordon-biersch-brewery-restaurant-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/6/16844086/95b59312e8f5e6a96ce0264defe5a45f_featured_v2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16844086",
+        "events_url": "https://www.zomato.com/san-jose/gordon-biersch-brewery-restaurant-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16844814
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16844814",
+        "name": "Iguanas",
+        "url": "https://www.zomato.com/san-jose/iguanas-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "330 South Third Street, San Jose, CA 95112",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3320916667",
+          "longitude": "-121.8844972222",
+          "zipcode": "95112",
+          "country_id": 216
+        },
+        "cuisines": "Mexican",
+        "average_cost_for_two": 0,
+        "price_range": 1,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/4/16844814/9a637e7972a16a46630f23809c48cd46_featured_v2.png",
+        "user_rating": {
+          "aggregate_rating": "4.1",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "votes": "153"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/iguanas-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/iguanas-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/4/16844814/9a637e7972a16a46630f23809c48cd46_featured_v2.png",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16844814",
+        "events_url": "https://www.zomato.com/san-jose/iguanas-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16862853
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16862853",
+        "name": "Punjab Cafe",
+        "url": "https://www.zomato.com/san-jose/punjab-cafe-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "322 E Santa Clara Street, San Jose, CA 95113",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3393388889",
+          "longitude": "-121.8836583333",
+          "zipcode": "95113",
+          "country_id": 216
+        },
+        "cuisines": "Indian",
+        "average_cost_for_two": 30,
+        "price_range": 2,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/3/16862853/ba7a4f30cd71fdaa8ead7ec7ea5ae63e_featured_v2.jpg",
+        "user_rating": {
+          "aggregate_rating": "3.4",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "votes": "18"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/punjab-cafe-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/punjab-cafe-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/3/16862853/ba7a4f30cd71fdaa8ead7ec7ea5ae63e_featured_v2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16862853",
+        "events_url": "https://www.zomato.com/san-jose/punjab-cafe-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "res_id": 16848007
+        },
+        "apikey": "c4988c0451c832d018db7dcaad3a38c8",
+        "id": "16848007",
+        "name": "Old Spaghetti Factory",
+        "url": "https://www.zomato.com/san-jose/old-spaghetti-factory-downtown?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "51 North San Pedro Street, San Jose, CA 95110",
+          "locality": "Downtown",
+          "city": "San Jose",
+          "city_id": 10883,
+          "latitude": "37.3359861111",
+          "longitude": "-121.8941333333",
+          "zipcode": "95110",
+          "country_id": 216
+        },
+        "cuisines": "Italian",
+        "average_cost_for_two": 40,
+        "price_range": 2,
+        "currency": "$",
+        "offers": [],
+        "thumb": "https://b.zmtcdn.com/data/pictures/7/16848007/acbd8d0e30e9f8e569184b0f6ed3834d_featured_v2.jpg",
+        "user_rating": {
+          "aggregate_rating": "3.9",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "votes": "185"
+        },
+        "photos_url": "https://www.zomato.com/san-jose/old-spaghetti-factory-downtown/photos#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "menu_url": "https://www.zomato.com/san-jose/old-spaghetti-factory-downtown/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/7/16848007/acbd8d0e30e9f8e569184b0f6ed3834d_featured_v2.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "deeplink": "zomato://r/16848007",
+        "events_url": "https://www.zomato.com/san-jose/old-spaghetti-factory-downtown/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    }
+  ]
+}

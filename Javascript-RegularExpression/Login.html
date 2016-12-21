@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log in </title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<div class = "main">
+  <div class="container">
+  	<div class="form">
+
+      <div class="signUp  pull-right">
+         <h1 >Have an account ?</h1> 
+         <br>
+         <button class="btn-modifier" id="logIn" type="button">LOG IN</button>
+         
+      </div>
+      <div class="logIn  pull-left">
+      	<h1>Don't have an account</h1>
+      	<br>
+      	<button class="btn-modifier" id="signUp" type="button">SIGN UP</button>
+      </div>
+      </div>
+    <div class="signupLogin" id="Sign-upLog-in" >
+    	<div class="signupForm" id="signupForm">
+         <h1>Sign Up</h1>
+         <form>
+          <input class="input-box" type="text" id="fname" required  name ="firstname" placeholder="Firstname">
+          <span id="name-error" class="error-msg "></span>
+          <br>
+          <input class="input-box" type="text" id="lname" required name="lastname" placeholder="Lastname">
+          <span id="lastname-error" class="error-msg "></span>
+          <br>
+          <input class="input-box" type="email" id="email-id" name="email" placeholder="Email">
+          <span id="emailname-error" class="error-msg "></span>
+          <br>
+          <input class="input-box" type="password" id="pwd" name="password" placeholder="Password">
+          <span id="password-error" class="error-msg "></span>
+          <input class="input-box" type="text" name="tel" id="tel" placeholder="Contact number(xxx-xxx-xxxx)">
+          <span id="telephone-error" class="error-msg "></span>
+         </form>
+         <button class="signup-btn" type="button">SIGN UP</button>
+    	</div>
+    	<div class="loginForm" id="loginForm">
+        <h1>Log In </h1>
+        <form>
+         <input class="input-box" type="email" name ="email" placeholder="Email">
+         <br>
+         <input class="input-box" type="password" name="password" placeholder="Password">
+        </form> 
+         <button class="signup-btn" type="button">Log in</button>
+    	</div>
+    </div>  
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
+

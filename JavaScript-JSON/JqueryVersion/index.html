@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github User Details</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<div class="container">
+	<div class="container-section">
+		<div class="search-section ">
+			<label class="control-label" for="search"><h2>Search GitHub User</h2></label>
+			<div class="form-group form-item ">
+				<input id="search" type="text" class="form-control" placeholder="Enter Github user login"></input>
+				<button id="searchUser"class="form-control btn btn-success ">Search</button>
+				<!--<select id="sortType" class="form-control">
+					<option>Name</option>
+					<option>Followers</option>
+					<option>Location</option>
+				</select>	-->
+				<div class="radio">
+					<label for="sortType" class="control-label pull-left">Sort View</label>
+					<label class="radio-inline"><input  type="radio" value ="Name" checked="checked" name="radioGroup">Name</label>
+					<label class="radio-inline"><input  type="radio" value= "Followers" name="radioGroup">Followers</label>
+					<label class="radio-inline"><input  type="radio"  value="Location" name="radioGroup">Location</label>
+				</div>
+			</div>
+		</div>
+      	</div>
+	<div id="user-container" >
+				
+	</div>
+</div>
+
+
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script id="userCardTpl" type="text/template">
+	
+		<div class="userCard">
+			<div class="row">
+				<div class ="user_avatar box col-xs-6 ">
+					<img class=" img-thumbnail img-responsive" src="{{avatar_url}}"/>
+				</div>
+				<div class="userBio text-capitalize box col-xs-6">
+					<img id="cancelImg" src="Cancel.png" >		
+					<h1 class="text-capitalize">{{name}}</h1>
+					<h3>Login Id: {{login}}</h3>
+					<h3>Location : {{location}}</h3>
+					<h3>Followers: {{followers}}</h3>
+					<button class="btn btn-info showMore form-control" data-toggle="modal" >Show More</button>	
+				</div>
+			</div>
+			<div id ="fullBio" class="fullBio modal fade text-center text-capitalize hideBio"    >
+				<div class="modal-dialog" >
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">{{name}}</h4>
+						</div>
+						<div class="modal-body">	
+							<ul class="fullBioList list-group">
+								<li class="list-group-item">Id :<span> {{id}}</span></li>
+								<li class="list-group-item">Gravatar Id : <span>{{gravatar_id}}</span></li>
+								<li class="list-group-item">Url : <span>{{url}}</span></li>
+								<li class="list-group-item">	<a href="{{html_url}}"><button class="btn btn-info form-control">Catch me on Github</button>	</a> </li>
+								<li class="list-group-item">	<a href="{{followers_url}}">	<button class=" form-control btn btn-info">Show Followers</button>	</a>	</li>
+								<li class="list-group-item">	<a href="{{following_url}}">	<button class="form-control btn btn-info">Following Me</button>	</a>	</li>
+								<li class="list-group-item">	<a href="{{Gists_url}}">	<button class=" form-control btn btn-info">Gists</button>		</a>	</li>
+								<li class="list-group-item">	<a href="{{starred_url}}">	<button class=" form-control btn btn-info">Starred</button>		</a>	</li>
+								<li class="list-group-item">	<a href="{{subscriptions_url}}">	<button class=" form-control btn btn-info">Subscriptions </button>	</a>	</li>
+								<li class="list-group-item">	<a href="{{organizations_url}}">	<button class=" form-control btn btn-info">Organization </button>	</a>	</li>
+								<li class="list-group-item">	<a href="{{repos_url}}">	<button class="form-control btn btn-info">Repos</button>	</a>	</li>
+								<li class="list-group-item">	<a href="{{events_url}}">	<button class=" form-control btn btn-info">Events</button>	</a>	</li>
+								<li class="list-group-item">	<a href="{{received_events_url}}">	<button class=" form-control btn btn-info">Received Events</button>	</a>	</li>
+								<li class="list-group-item">Type : <span>{{type}}</span></li>
+								<li class="list-group-item">Site Admin : <span>{{site_admin}}</span></li>
+								<li class="list-group-item">Company : <span>{{company}}</span></li>
+								<li class="list-group-item"> <a href="{{blog}}">	<button class=" form-control btn btn-info">My Blogs</button></a>	</li>
+								<li class="list-group-item">Email : <span>{{email}}</span></li>
+								<li class="list-group-item">Hireable : <span>{{hireable}}</span></li>
+								<li class="list-group-item">Followers : <span>{{followers}}</span></li>
+								<li class="list-group-item">Following : <span>{{following}}</span> </li>
+								<li class="list-group-item">Created When :<span> {{created_at}}</span></li>
+								<li class="list-group-item">Last Updated : <span>{{updated_at}}</span> </li>
+							</ul>
+						</div>
+						<div class="modal-footer">
+          						<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+						<div>			
+					</div>
+				</div>
+			</div>	
+		</div>
+	
+</script>
+</body>
+</html>	

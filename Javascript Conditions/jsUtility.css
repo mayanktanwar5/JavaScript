@@ -1,0 +1,336 @@
+body, html  {
+
+padding: 0;
+margin: 0;
+
+}
+
+body h1 
+{
+	font-family: sans-serif;
+	color: purple;
+}
+
+body p{
+	font-family: serif;
+	color:purple;
+}
+
+body{
+	background-color: #cfe2cf;
+}
+
+.main{
+
+	height:100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+}
+
+.header{
+
+	position: relative;
+	background-color: purple;
+	height: 50px;
+	width: 100%;
+}
+
+.heading{
+
+	position:absolute;
+	background-color: white;
+	height:30px;
+	top: 30px;
+	left: 20px;
+	text-align: center;
+	padding:5px 10px 5px 10px;
+	box-shadow: 3px 3px 1px #888888;
+	max-width: 250px;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius:50%;
+	border-top-right-radius: 50%;
+	
+}
+
+.heading p{
+	position: relative;
+	top: -10px;
+	font-weight: bold;
+}
+.container{
+
+	position: relative;
+	padding-top: 5%;
+	padding-left: 10% ;
+	padding-right: 10% ;
+
+}
+
+li ,ul{
+	list-style: none;
+}
+
+.modal, .dropdown,.collapsible ,.tabs{
+	margin-bottom: 3%;
+	border-bottom: 1px solid purple;
+	padding-bottom: 40px;
+	
+
+}
+
+.modal-section{
+
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	z-index: 1000;
+	top:18%;
+	left: 35%;
+	border: 1px solid purple;
+	background-color: #ffb3ff;
+	padding: 20px;
+
+}
+
+.modal-content{
+
+	padding: 20px 20px 20px 20px;
+}
+.close{
+
+	float: right;
+}
+
+
+.modal-notactive
+{
+	transform:scale(0.7,0.7);
+	visibility: hidden;
+	transition: all 0.2s ease;
+	animation-name:modal-disappear;
+	animation-duration:0.2s;
+	animation-timing-function: ease-in-out;
+}
+
+.modal-active{
+	visibility: visible;
+	transition: all 0.3s ease;
+	animation-name:modal-appear;
+	animation-duration:0.3s;
+	animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes modal-appear{
+	0%{transform:scale(0.2,0.2);}
+	20%{transform:scale(0.4,0.4); }
+	50%{transform:scale(0.6,0.6); }
+	70%{transform:scale(0.8,0.8);}
+	100%{transform:scale(1.0,1.0);}
+	
+}
+
+
+@-webkit-keyframes modal-disappear{
+	0%{transform:scale(1.0,1.0);}
+	50%{transform:scale(0.8,0.8); }
+	100%{transform:scale(0.6,0.6);}
+		}
+
+
+		.dropdown p{
+			padding: 2px;
+		}
+.button-modifier{
+
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	background-color: #cc66cc;
+	color:white;
+	font-weight: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.dropdown-list li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-list{
+background-color: white;
+border: 1px solid purple;
+width: 100px;
+text-align: left;
+border-radius: 5px;
+position: absolute;
+font-size: 5px;
+padding: 0;
+visibility: hidden;
+cursor: pointer;
+margin: 2px;
+
+}
+
+
+.listHover:hover + .hoverList{
+
+visibility: visible;
+
+}
+
+.hoverList:hover{
+
+visibility: visible;
+}
+
+
+.list-notactive{
+	visibility: hidden;
+
+}
+.list-active{
+visibility: visible;
+}
+
+.front-end-display{
+
+	display: inline-block;
+	
+	margin-right: 40px;
+	position: relative;
+
+	}
+
+
+.overlay{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			z-index: 999;
+			top:0;
+			left: 0;
+            background-color: rgba(0,0,0,0.7);
+		}
+
+		.overlay-active{
+
+			display: block;
+		}
+      .overlay-notactive{
+      	
+      	display: none;
+      }
+
+.dropdown-list a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #FDF8FF;
+    font-size: 14px;
+    text-align: left;
+    padding: 7px;
+    color: #9A799A;
+
+}
+
+
+.dropdown-list a:hover
+{
+background-color: purple;
+color:white;
+}
+
+/* Collapsible*/
+
+.collap-header{
+	background-color: #cc66cc;
+	border-radius: 5px;
+	margin: 2px;
+	height: 40px;
+
+}
+
+
+.collap-header h2{
+	color: white;
+	font-family: sans-serif;
+	padding: 5px;
+}
+
+.collap-content{
+	height: 0;
+	background-color: white;
+	position: relative;
+	border-radius:  5px;
+	overflow: hidden;
+	transition-property: height;
+	transition: all 0.5s ease;
+	
+}
+
+.collap-active{
+	height: 100px;
+}
+
+.tabs-list li{
+	display: inline-block;
+	position: relative;
+	
+	width:150px;
+	text-align: center;
+	height: 50px;
+	
+}
+.tabs-nav li a{
+	text-decoration: none;
+
+	color:white;
+	position: relative;
+    text-align: center;
+    top:15px;
+    font-weight: bold;
+transition: all 0.3s ease;
+}
+
+
+
+.tabs p
+{
+	font-family: serif;
+}
+.tabs-nav {
+	display: inline-block;
+	color:purple;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.tabs-nav li:hover{
+
+	background-color: purple;
+	color:white;
+}
+
+.tabs-heading{
+	color:purple;
+	font-family: sans-serif;
+}
+
+.tabs-content div
+{
+	display: none;
+}
+
+.tabs-content .tabs-content-active{
+	display: block;
+
+}
+
+.tabs-nav > li.tabs-content-active
+{
+	background-color: purple;
+}

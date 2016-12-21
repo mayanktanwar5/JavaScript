@@ -1,0 +1,40 @@
+body ,html
+{
+	width:100%;
+	background-color: grey;
+	color:white;
+}
+
+.mainFrame
+{
+	width:70%;
+	top:10%;
+	margin: 120px auto;
+	position: relative;
+}
+
+.mainFrame label
+{
+	margin-bottom: 20px;
+	display: block;
+}
+
+.mainFrame input
+{
+	margin-bottom:  10px
+}
+.mainFrame button
+{
+	margin-top:20px;
+
+	text-align:  center;
+}
+#displayResult 
+#result
+{
+	position: relative;
+	text-align: center;
+	width: 60%;
+	top:-100px;
+	
+}

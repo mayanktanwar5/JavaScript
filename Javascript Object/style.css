@@ -1,0 +1,115 @@
+html,body
+{
+	height:100%;
+
+}
+
+body
+{
+	background: url("clock.jpg") , no-repeat fixed center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#countdown1{
+
+position: relative;
+display:block;
+font-family:cursive;
+letter-spacing: 5px;
+width:60%;
+margin: 100px auto;
+background-color: rgba(0,0,0,0.6);
+border-radius: 10px;
+color:white;
+height:400px;
+}
+
+#countdown1 .title
+{
+	text-align: center;
+	padding-top:10px;
+}
+.schedule-input
+{
+	position: relative;
+	width:70%;
+	margin:40px auto;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	height: 250px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 20px;
+	
+}
+
+.schedule-input form
+{
+	position: relative;
+	width:80%;
+	margin:40px auto;
+	
+}
+.countdown-input label
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+		
+}
+.countdown-submit 
+{
+text-align: center;	
+}
+.countdown-submit button
+{
+	width: 100px;
+	margin-top: 20px;
+}
+
+#show-time
+{
+	width:80%;
+	position: relative;
+	top:100px;
+	margin: 100px auto;
+	height: 100%;
+	border-width: 20px;
+	border: white;
+	color:white;
+	text-align: center;
+	font-size: 25px;
+
+
+	
+}
+
+.display-countdown
+{
+	color:white;
+	font-family:georgia;
+	border-radius: 20px;
+	border-color: white;
+	border-width: 5px;
+	position: relative; 
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.display-time
+{
+	height: 400px;
+	position: relative;
+	text-align: center;
+}
+#show-days ,#show-hours, #show-min, #show-secs
+{
+	position: relative;
+	height: 350px;
+	font-size: 150px;
+	
+}
+#hours, #days,#min,#secs
+{
+	position:absolute;
+	bottom: 0;
+}
