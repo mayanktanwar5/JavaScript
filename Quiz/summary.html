@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOCK QUIZ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="style.css">
+    <script>
+  window.onload= function(){
+      var username = window.location.hash.substring(1);
+      console.log(username);
+      var ques1=username.search("ques1");
+      var ques1anw= parseInt(username.substring(ques1+6,ques1+8));
+      var ques2=username.search("ques2");
+      var ques2anw=parseInt(username.substring(ques2+6,ques2+8));
+      var ques3=username.search("ques3");
+      var ques3anw=parseInt(username.substring(ques3+6,ques3+8));
+      var ques4=username.search("ques4");
+      var ques4anw=parseInt(username.substring(ques4+6,ques4+8));
+      var user = username.substring(5,ques1-1);
+
+      if(ques1anw>0 && ques2anw>0)
+      {
+          document.getElementById("quant").innerHTML=2;
+          document.getElementById("quantSc").innerHTML=100;
+      }else if(ques1anw>0 || ques2anw>0)
+      {
+          document.getElementById("quant").innerHTML=1;
+          document.getElementById("quantSc").innerHTML=50;
+      } else
+      {
+          document.getElementById("quant").innerHTML=0;
+          document.getElementById("quantSc").innerHTML=0;
+      }
+
+      if(ques3>0)
+      {
+          document.getElementById("read").innerHTML=1;
+          document.getElementById("readSc").innerHTML=100;
+
+      }else
+      {
+          document.getElementById("read").innerHTML=0;
+          document.getElementById("readSc").innerHTML=0;
+      }
+
+      if(ques4>0)
+      {
+          document.getElementById("audio").innerHTML=1;
+          document.getElementById("audioSc").innerHTML=100;
+
+      }else
+      {
+          document.getElementById("audio").innerHTML=0;
+          document.getElementById("audioSc").innerHTML=0;
+      }
+
+      console.log(ques1anw,ques2anw,ques3anw,ques4anw,user);
+      console.log(username.search("ques1"));
+      console.log(username.search("user"));
+      console.log(username.search("ques2"));
+        document.getElementById("user").innerHTML=user;
+
+  }
+
+
+
+    </script>
+</head>
+<body>
+
+
+<div class="container ">
+
+    <div class="  quescard">
+        <header class="text-center text-height btn-large">Score Card</header>
+        <br>
+        <br>
+        <div class=" summary">
+
+                <details>
+                    <summary>Quantitaive Section</summary>
+                    <h6>Number of questions answered 2</h6>
+                    <h6>Number of correct answered : <span id = "quant">""</span></h6>
+                    <h5>Score: <span id = "quantSc">""</span></h5>
+                </details>
+                <details>
+                    <summary>Reading Section</summary>
+                    <h6>Number of questions answered 1</h6>
+                    <h6>Number of correct answered : <span id = "read">""</span></h6>
+                    <h5>Score: <span id = "readSc"></span></h5>
+                </details>
+                <details>
+                    <summary>Audio and Video Section</summary>
+                    <h6>Number of questions answered 1</h6>
+                    <h6>Number of correct answered : <span id = "audio">""</span></h6>
+                    <h5>Score: <span id = "audioSc">""</span></h5>
+                </details>
+                <br>
+                <br>
+
+        </div>
+
+        <br>
+        <h3 class="text-center">Thank You <spna id="user"></spna></h3>
+        <footer class=" footer-font ">@copyright 2017</footer>
+        <br>
+    </div>
+
+</body>
+</html>

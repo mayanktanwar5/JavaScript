@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <br>
+    <div class="panel panel-success">
+        <div class="panel-heading text-center ">
+            <h2 >Google Map view</h2>
+        </div>
+    </div>
+
+    <div class="map-load panel panel-warning ">
+        <div class="panel-body">
+            <div class="col-md-6 "><a href="index.html"class="btn form-control btn-success btn-large">Retails Locations</a></div>
+            <div class="col-md-6"><a href="index1.html" class="btn btn-danger form-control btn-large">Show by Revenue</a></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+</div>
+
+<script>
+    var map;
+
+    var pinImage;
+    var pinColor="FE7569";
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 8,
+            center: new google.maps.LatLng(2.8,-187.3),
+            mapTypeId: 'terrain'
+        });
+
+        // Create a <script> tag and set the USGS URL as the source.
+        var script = document.createElement('script');
+        // This example uses a local copy of the GeoJSON stored at
+        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+        script.src = 'data.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+
+
+
+
+    };
+
+//     Loop through the results array and place a marker for each
+//     set of coordinates.
+    window.eqfeed_callback = function(results) {
+        console.log(results);
+        map.setCenter(new google.maps.LatLng(results.locations.location[0].latitude,results.locations.location[0].longitude));
+        for (var i = 0; i < results.locations.location.length; i++) {
+            var lat = results.locations.location[i].latitude;
+            var long = results.locations.location[i].longitude;
+            var latLng = new google.maps.LatLng(lat,long);
+//            map.center= new google.maps.LatLng(lat,long),
+            if(results.locations.location[i].type=="RetailLocation")
+            {
+                pinColor="33cc33";
+                console.log("green");
+            }
+            else if(results.locations.location[i].type=="Distribution Facility")
+            {
+                pinColor ="ff0000";
+                console.log("red");
+
+            }else if(results.locations.location[i].type=="Call Center")
+            {
+                pinColor="ffffff";
+                console.log("white");
+
+            } else if(results.locations.location[i].type==="HeadQuarters")
+            {
+                pinColor="3366ff";
+                console.log("blue");
+            }
+
+            console.log(pinColor);
+
+            pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+                new google.maps.Size(21, 34),
+                new google.maps.Point(0,0),
+                new google.maps.Point(10, 34));
+
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                animation: google.maps.Animation.DROP,
+                icon:pinImage,
+                title:results.locations.location[i].type
+            });
+
+        }};
+
+
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABwz-XMn-tRlChtUKANUvYhkQ4W6-F5AU&callback=initMap">
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body
+{
+    height: 100%;
+    background: url("./images/bg_image.jpg") repeat 0 0 #f8f8f8;
+    color: #333;
+    font-size: 14px;
+    font-family: "Helvetica neue",Helvetica,Arial,Sans-serif;
+    line-height: 1;
+}
+
+.card,.quescard
+{
+    top:120px;
+    margin: 0 auto;
+    width:50%;
+    border:1px solid grey;
+    border-radius:2px;
+    position: relative;
+}
+
+.quescard
+{
+    top:50px;
+    margin: 0 auto;
+    width:90%;
+}
+.text-height
+{
+    height:40px;
+    line-height:40px;
+}
+.text-height label
+{
+    line-height:40px;
+}
+header
+{
+    background-color: lightgray;
+}
+
+.btn-width
+{
+    width: 120px;
+}
+.footer-font
+{
+    font-size: 10px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.ques-sec, .ques-graph
+{
+    height:300px;
+}
+.ques-optn
+{
+    height:80px;
+}
+
+.ques-title
+{
+    padding-bottom: 60px;
+}
+.summary
+{
+
+    margin: 0 auto;
+    width:95%;
+    position: relative;
+    border:1px solid grey;
+    padding: 20px;
+}

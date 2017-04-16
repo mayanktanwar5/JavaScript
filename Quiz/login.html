@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOCK QUIZ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="style.css">
+    <script>
+
+        function login()
+        {
+            console.log("logged in"+document.getElementById("username").value);
+            if(document.getElementById("username").value!="") {
+                var survey = {};
+                survey.username = document.getElementById("username").value;
+
+                window.location.href='question1.html'+'#'+'user='+document.getElementById("username").value;
+            }else
+            {
+                alert("Please enter a username");
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+
+    <div class="container ">
+
+        <div class="  card">
+            <header class="text-center text-height btn-large">User Login</header>
+            <br>
+            <br>
+            <div class="col-md-12 text-height">
+              <div class="col-md-4 text-center"><label for="username">Username</label></div>
+               <div class="col-md-8"><input type="text" class="form-control" id= "username" placeholder="username" ></div>
+            </div>
+            <br>
+            <div class="col-md-12 text-height">
+                <div class="col-md-4 text-center"><label for="username">Password</label></div>
+                <div class="col-md-8"><input type="password" class="form-control" id= "password" placeholder="password" ></div>
+            </div>
+            <br>
+            <div class="col-md-12 text-height text-center">
+                <button onclick="login()" class="btn btn-width btn-success ">Login</button>
+                <br>
+            </div>
+
+            <br>
+
+            <footer class=" footer-font ">@copyright 2017</footer>
+            <br>
+        </div>
+
+</body>
+</html>

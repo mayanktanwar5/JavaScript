@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <br>
+    <div class="panel panel-success">
+        <div class="panel-heading text-center ">
+            <h2 >Google Map view</h2>
+        </div>
+    </div>
+
+    <div class="map-load panel panel-warning ">
+        <div class="panel-body">
+            <div class="col-md-6 "><a href="index.html"class="btn form-control btn-success btn-large">Retails Locations</a></div>
+            <div class="col-md-6"><a href="index1.html" class="btn btn-danger form-control btn-large">Show by Revenue</a></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABwz-XMn-tRlChtUKANUvYhkQ4W6-F5AU&callback=initMap">
+</script>
+
+</body>
+</html>

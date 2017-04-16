@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOCK QUIZ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="style.css">
+    <script>
+        var username = window.location.hash.substring(1);
+        console.log(username);
+        function next()
+        {
+            var one =document.getElementById("one");
+
+            if(one.checked)
+            {
+                console.log("one.checked"+ one.checked);
+                window.location.href="question5.html"+"#"+username+"?ques4="+"50";
+            }else
+            {
+                window.location.href="question5.html"+"#"+username+"?ques2="+"00";
+            }
+        }
+    </script>
+</head>
+<body>
+
+
+
+<div class="container ">
+
+    <div class=" quescard ">
+        <header class="text-center text-height btn-large" >Question 4 </header>
+        <br>
+        <br>
+        <div class="ques-sec col-md-6">
+
+            <div class=" ques-title col-md-12">
+
+                Watch the video and answer the following question<br>
+                What is the source mentioned int the video
+
+            </div>
+            <br>
+            <div class="col-md-12 optn-coll">
+                <div class="col-md-6 ques-optn">
+                    <div class="col-md-2">
+                        <input type="radio" id="one" name="que1" value ="true">
+                    </div>
+                    <div class="col-md-10">
+                        NASA.Gov
+                    </div>
+                </div>
+                <div class="col-md-6 ques-optn">
+                    <div class="col-md-2">
+                        <input type="radio" name="que1" value ="true">
+                    </div>
+                    <div class="col-md-10">
+                        Data.Gov
+                    </div>
+                </div>
+                <div class="col-md-6 ques-optn">
+                    <div class="col-md-2">
+                        <input type="radio" name="que1" value ="true">
+                    </div>
+                    <div class="col-md-10">
+                        Facebook
+                    </div>
+                </div>
+                <div class="col-md-6 ques-optn">
+                    <div class="col-md-2">
+                        <input type="radio" name="que1" value ="true">
+                    </div>
+                    <div class="col-md-10">
+                        Yahoo
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ques-graph col-md-6">
+
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/bnKFaAS30X8" frameborder="0" allowfullscreen></iframe>
+            <video width="320" height="240" controls>
+                <source src="https://www.youtube.com/watch?v=QlC0MPdmNFE" type="video/youtube">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+        <br>
+        <br>
+        <div class="col-md-12 text-height text-center">
+            <button class="btn btn-width btn-success " onclick="next()">Next</button>
+            <br>
+        </div>
+
+        <br>
+
+        <footer class=" footer-font ">@copyright 2017</footer>
+        <br>
+    </div>
+
+
+</body>
+</html>
